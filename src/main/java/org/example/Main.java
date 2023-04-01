@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.command.CommandManager;
 import org.example.command.command_management.AppCommandInvoker;
+import org.example.command.command_management.ProductCommandInvoker;
 
 import java.util.Scanner;
 
@@ -12,6 +13,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         CommandManager commandManager = new CommandManager(scanner);
         commandManager.register("app",new AppCommandInvoker(scanner));
+        commandManager.register("product",new ProductCommandInvoker(scanner));
 
         String commandName;
         do {
