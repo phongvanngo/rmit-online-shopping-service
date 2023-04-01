@@ -66,4 +66,10 @@ public class ProductRepository {
                 .stream().parallel()
                 .filter(e -> e.getId().equals(id)).findFirst();
     }
+
+    public Optional<Product> getByName(String name) {
+        return products
+                .stream().parallel()
+                .filter(e -> e.getName().equals(name)).findFirst();
+    }
 }
