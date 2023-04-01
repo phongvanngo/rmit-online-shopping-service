@@ -61,7 +61,6 @@ public class Product {
         if (isGift) {
             return this.message;
         }
-        System.out.println("---!!!---Product isn't a gift");
         return null;
     }
 
@@ -76,8 +75,6 @@ public class Product {
     public void setMessage(String message) {
         if (isGift) {
             this.message = message;
-        } else {
-            System.out.println("---!!!---Product isn't a gift");
         }
     }
 

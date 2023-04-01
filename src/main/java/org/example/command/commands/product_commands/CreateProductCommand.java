@@ -79,6 +79,5 @@ public class CreateProductCommand implements Command {
         if (!passed) return;
         productRepository.saveProduct(product);
         System.out.println("Create successfully!\n");
-        System.out.println(product.getName());
     }
 }

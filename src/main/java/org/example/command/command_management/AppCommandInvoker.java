@@ -3,6 +3,7 @@ package org.example.command.command_management;
 import org.example.command.commands.Command;
 import org.example.command.commands.app_commands.ExitCommand;
 import org.example.command.commands.app_commands.HelloCommand;
+import org.example.command.commands.app_commands.ListCommand;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,6 +17,7 @@ public class AppCommandInvoker implements CommandInvoker {
         this.scanner = scanner;
         register("hi", new HelloCommand(scanner));
         register("exit",new ExitCommand(scanner));
+        register("?",new ListCommand(scanner));
     }
 
     private void register(String commandName, Command command) {

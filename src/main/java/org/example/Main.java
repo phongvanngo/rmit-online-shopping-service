@@ -19,7 +19,7 @@ public class Main {
 
         String commandName;
         do {
-            System.out.print("Enter command: ");
+            System.out.print("Enter command ( Type ? to view all commands): ");
             commandName = scanner.next();
             commandManager.execute(commandName);
         } while (true);

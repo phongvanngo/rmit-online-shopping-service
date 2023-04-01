@@ -30,7 +30,7 @@ public class SwitchCartCommand implements Command {
     public void execute(String commandName) {
         System.out.println("Current Carts In System: ");
         cartRepository.printCarts();
-        System.out.print("Input cart id that you want to switch to :");
+        System.out.print("Input cart id that you want to switch to : ");
         Integer cartId = scanner.nextInt();
         Optional<Cart> cart = cartRepository.getById(cartId);
         if (cart.isEmpty()) {

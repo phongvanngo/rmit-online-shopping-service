@@ -11,7 +11,7 @@ public class DigitalProduct extends Product{
                 "id=" + this.getId() +
                 ", name='" + this.getName() + '\'' +
                 ", description='" + this.getDescription() + '\'' +
-                ", quantityAvailable=" + this.getDescription() +
+                ", quantityAvailable=" + this.getQuantityAvailable() +
                 ", Price=" + this.getPrice() +
                 ", isGift=" + this.isGift() +
                 ", message='" + this.getMessage() + '\'' +
